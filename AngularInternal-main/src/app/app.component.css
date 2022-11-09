@@ -1,0 +1,20 @@
+body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+.app-header{
+  justify-content: space-between;
+}
+.nav-tool-items{
+  padding: 1rem;
+}
+.mainTool{
+   
+    padding-left:30px;
+  padding-right:30px;
+}
+.nn{
+    justify-content: space-between;
+}

@@ -1,0 +1,105 @@
+<div class="main-container">
+
+  <div class="right-side">
+<!-- 
+    <mat-card mat-elevation  class="product-card" >
+      <img mat-card-image src="https://images.unsplash.com/photo-1667666111099-07b0a9ee4f30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1094&q=80" class="product-image" alt="product image">
+      <mat-card-content>
+      <p class="p-category">category</p>
+      <p class="p-name">name</p>
+      <p class="p-description">sdfsdfsf100</p>
+      <p class="p-price">₹1000</p>
+      </mat-card-content>
+      
+      <mat-card-actions>
+          <div class="buttons-container">
+              <button mat-raised-button class="add-to-cart" color="#566573" ><mat-icon>add_shopping_cart</mat-icon> Add to Cart</button>
+              <button mat-raised-button class="add-to-cart" style="background-color:#f9e79f;" ><mat-icon>favorite_border</mat-icon> Wishlist</button>
+              
+          </div>
+      </mat-card-actions>
+      </mat-card> -->
+    
+
+  </div>
+
+  <div class="container">
+
+    <mat-card mat-elevation *ngFor="let card of obs | async" class="product-card" >
+        <img mat-card-image src="https://images.unsplash.com/photo-1667666111099-07b0a9ee4f30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1094&q=80" class="product-image" alt="product image">
+        <mat-card-content>
+        <p class="p-category">{{card.name}}</p>
+        <p class="p-name">{{card.name}}</p>
+        <p class="p-description">{{card.description}}</p>
+        <p class="p-price">₹{{card.price}}</p>
+        </mat-card-content>
+        
+        <mat-card-actions>
+            <div class="buttons-container">
+                <button mat-raised-button class="add-to-cart" color="#566573" ><mat-icon>add_shopping_cart</mat-icon> Add to Cart</button>
+                <button mat-raised-button class="add-to-cart" style="background-color:#f9e79f;" ><mat-icon>favorite_border</mat-icon> Wishlist</button>
+                
+            </div>
+        </mat-card-actions>
+        </mat-card>
+        
+
+  </div>
+
+
+</div>
+
+<!-- <mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile
+        [colspan]=1
+        [rowspan]=2
+        [style.background]="firstColor"
+        >
+      Image
+    </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]=3
+        [rowspan]=10
+        [style.background]="secondColour"
+        >
+        <div class="container">
+
+          <mat-card mat-elevation *ngFor="let card of obs | async" class="product-card" >
+              <img mat-card-image src="https://images.unsplash.com/photo-1667666111099-07b0a9ee4f30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1094&q=80" class="product-image" alt="product image">
+              <mat-card-content>
+              <p class="p-category">{{card.name}}</p>
+              <p class="p-name">{{card.name}}</p>
+              <p class="p-description">{{card.description}}</p>
+              <p class="p-price">₹{{card.price}}</p>
+              </mat-card-content>
+              
+              <mat-card-actions>
+                  <div class="buttons-container">
+                      <button mat-raised-button class="add-to-cart" color="#566573" ><mat-icon>add_shopping_cart</mat-icon> Add to Cart</button>
+                      <button mat-raised-button class="add-to-cart" style="background-color:#f9e79f;" ><mat-icon>favorite_border</mat-icon> Wishlist</button>
+                      
+                  </div>
+              </mat-card-actions>
+              </mat-card>
+              
+      
+        </div>
+        
+    </mat-grid-tile>
+    
+  </mat-grid-list> -->
+  <mat-paginator [pageSizeOptions]="[3, 6]"></mat-paginator>
+
+  
+ 
+  
+
+
+<!-- 
+<div fxLayout="row">
+    
+
+    
+    <div>Hello</div>
+    <div>Shubham</div>
+</div> -->

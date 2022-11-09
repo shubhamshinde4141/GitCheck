@@ -1,0 +1,76 @@
+.right-content{
+    background-color: red;
+}
+.left-content{
+    background-color: blueviolet;
+}
+.product-card{
+    border-radius: 9px;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+.product-image{
+    background-size: cover;
+}
+.main-container{
+
+    display: flex;
+    
+    justify-content: left;
+}
+.right-side{
+    background-color: red;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.container{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+}
+.container>*{
+    flex: 0 0 280px
+}
+.p-category{
+    font-size: large;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5d6d7e;
+}
+.p-name{
+    font-size: x-large;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.p-description{
+    font-size: medium;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif  
+}
+.p-price{
+    padding-top: 10px;
+    font-size: xx-large;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif   
+}
+.add-to-cart{
+    border-radius: 50px;
+    
+    background-color: #82e0aa  ;
+}
+.avatarImage
+ {
+ /* background-image: url('./assets/logo.jpg'); */
+ background-size: inherit;
+ }
